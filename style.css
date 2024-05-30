@@ -36,6 +36,7 @@ hr {
     box-sizing: content-box; /* 1 */
     height: 0; /* 1 */
     overflow: visible; /* 2 */
+
 }
 
 pre {
@@ -255,9 +256,14 @@ html {
 }
 .footer__content {
     display: flex;
-    flex-direction: column;
-    gap: 5.2rem;
+    flex-direction: row;
+    gap: 2.5rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-evenly;
+    padding-bottom: 1rem ;
 }
+
 .footer__copyright {
     font-size: 1.2rem;
     line-height: 130%;
@@ -278,6 +284,14 @@ html {
     background-color: #D50000;
     border: none;
     cursor: pointer;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 /* .buttonAction:hover, .sign-up__button:hover, .contactanos__button:hover, .plan .plan-card__button:hover, .conoce-mas__button:hover, .banner__button:hover, .navbar__button:hover {
@@ -302,6 +316,12 @@ html {
     transition-duration: 500ms;
     transition-timing-function: ease-in;
     background-color: #FFF;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
 }
 .navbar--dark-background {
     background-color: rgb(22, 28, 45);
@@ -398,7 +418,13 @@ html {
     white-space: nowrap;
     color:black;
     display: inline-block;
-    /* COLOCAR LA FUENTE */
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.navbar__link a:hover{
+    color:#D50000; 
 }
 
 .banner {
@@ -432,12 +458,16 @@ html {
 }
 
 .banner__title {
-    font-size: 4rem;
+    font-size: 5.6rem;
     line-height: 120%;
     font-weight: 700;
     font-style: normal;
     color: rgb(248, 248, 248);
     text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 .banner__button {
@@ -449,40 +479,28 @@ html {
     scroll-margin-top: 7rem;
     width: 100%;
     max-width: 82rem;
-    margin: 0 auto;
+    margin: 15rem auto;
     padding: 2rem 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
 }
-
-.conoce-mas__header, .testimonios__header, .nuestros-beneficios__header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-}
-
-.conoce-mas__title, .preguntas-frecuentes__title, .contactanos__title, .plan__title, .sobre-nosotros__title, .testimonios__title, .nuestros-beneficios__title {
-    font-size: 2rem;
-    line-height: 120%;
-    font-weight: 700;
+.conoce-mas__title{
+    font-size: 4.8rem;
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
     font-style: normal;
-}
-
-.conoce-mas__subtitle, .testimonios__subtitle, .nuestros-beneficios__subtitle {
-    font-size: 1.6rem;
-    line-height: 120%;
-    font-weight: 700;
-    font-style: normal;
-    color: rgb(0, 0, 0);
+    font-variation-settings:
+      "wdth" 100;
+    letter-spacing: 0.15rem;
 }
 
 .conoce-mas__img {
+    margin-top: 40px;
     width: 100%;
-    max-width: 26rem;
+    max-width: 60rem;
 }
 .conoce-mas__img img {
     width: 100%;
@@ -502,101 +520,6 @@ html {
     text-align: justify;
 }
 
-.sobre-nosotros {
-    scroll-margin-top: 7rem;
-    width: 100%;
-    max-width: 82rem;
-    margin: 0 auto;
-    padding: 2rem 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.sobre-nosotros__content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-
-.sobre-nosotros__title {
-    text-align: center;
-}
-.sobre-nosotros__info {
-    font-size: 1.2rem;
-    line-height: 130%;
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(77, 77, 77);
-    text-align: justify;
-}
-
-.sobre-nosotros__img {
-    width: 100%;
-    max-width: 17rem;
-    margin: 0 auto;
-    aspect-ratio: 1/1;
-}
-
-.sobre-nosotros__details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.sobre-nosotros__card {
-    position: relative;
-    width: 70%;
-    min-width: 19rem;
-    max-width: 21rem;
-    aspect-ratio: 1/0.7;
-    transform-style: preserve-3d;
-    perspective: 800px;
-}
-
-.sobre-nosotros__front, .sobre-nosotros__back {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.8rem;
-    line-height: 120%;
-    font-weight: 700;
-    font-style: normal;
-    background-color: rgb(31, 41, 55);
-    color: rgb(248, 248, 248);
-    backface-visibility: hidden;
-    transition: 1s;
-    border-radius: 2rem;
-}
-
-.sobre-nosotros__back {
-    font-size: 1.2rem;
-    line-height: 130%;
-    font-weight: 400;
-    font-style: normal;
-    z-index: 1;
-    padding: 2rem;
-    backface-visibility: visible;
-    background-color: rgb(1, 145, 226);
-}
-
-.sobre-nosotros__back p {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    transform: rotateY(180deg);
-    text-align: justify;
-}
-
 .contactanos {
     scroll-margin-top: 7rem;
     padding: 2rem 4rem;
@@ -606,7 +529,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: 1.2rem;
-    background-color: #ebebeb;
+    background-color: white;
     background-size: cover;
     background-position: center;
 }
@@ -625,7 +548,14 @@ html {
     gap: 1rem;
 }
 .contactanos__title {
-    text-align: center;
+    font-size: 4.8rem;
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    letter-spacing: 0.15rem;
 }
 .contactanos__subtitle {
     display: none;
@@ -636,13 +566,14 @@ html {
 }
 
 .contactanos__form {
+    background-color: #ebebeb;
     width: 100%;
     max-width: 26rem;
     padding: 3rem 2.4rem;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-    background-color: rgb(248, 248, 248);
+    background-color: ;
     border-radius: 1rem;
 }
 .contactanos__label {
@@ -652,6 +583,10 @@ html {
 }
 .contactanos__label p {
     font-size: 1.6rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
     line-height: 120%;
     font-weight: 700;
     font-style: normal;
@@ -716,7 +651,9 @@ html {
     font-size: 1.6rem;
     line-height: 120%;
     font-weight: 700;
+    font-family: Verdana, Geneva, sans-serif;
     font-style: normal;
+    background-color: #4A4A4A;
 }
 
 .usefull-links__list {
@@ -728,6 +665,7 @@ html {
     list-style: none;
 }
 .usefull-links__item a {
+    font-family: Verdana, Geneva, sans-serif;
     font-size: 1.2rem;
     line-height: 130%;
     font-weight: 400;
@@ -740,14 +678,37 @@ html {
     font-size: 1.6rem;
     line-height: 120%;
     font-weight: 700;
+    font-family: Verdana, Geneva, sans-serif;
     font-style: normal;
+    background-color: #4A4A4A;
+}
+.contact__item p{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.2rem;
+    line-height: 130%;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(248, 248, 248);
+    text-decoration: none;
 }
 
 .legal__title {
     font-size: 1.6rem;
     line-height: 120%;
     font-weight: 700;
+    font-family: Verdana, Geneva, sans-serif;
     font-style: normal;
+    background-color: #4A4A4A;
+}
+
+.legal__link p{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.2rem;
+    line-height: 130%;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(248, 248, 248);
+    text-decoration: none;
 }
 
 .reconomiento {
@@ -780,7 +741,7 @@ html {
 .equipo{
     scroll-margin-top: 7rem;
     width: 100%;
-    margin: 3rem 0;
+    margin: 0 0;
     padding: 2rem 4rem;
     display: flex;
     flex-direction: column;
@@ -789,6 +750,16 @@ html {
     background-color: #ebebeb;
     overflow-x: hidden; /* Oculta el desbordamiento horizontal */
 
+}
+.equipo__title{
+    font-size: 4.8rem;
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    letter-spacing: 0.15rem;
 }
 .equipo__content {
     display: flex;
@@ -824,6 +795,20 @@ html {
     height: 250px;
     width: 200px;
 }
+.equipo__person-title{
+    font-size: 2.4rem;
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    letter-spacing: 0.15rem;
+}
+
+.equipo__person-description{
+    font-size: 1.8rem;
+}
 
 .caracteristicas{
     scroll-margin-top: 7rem;
@@ -832,10 +817,29 @@ html {
     padding: 2rem 4rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1.2rem;
     overflow-x: hidden; /* Oculta el desbordamiento horizontal */    
 }
+.caracteristicas__heading{
+    margin: auto;
+}
+.caracteristicas__title{
+    font-size: 4.8rem;
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    letter-spacing: 0.15rem;
+}
+
+.caracteristicas-item__title{
+    font-size: 1.7rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+}
+
 .caracteristicas-row{
     display: flex;
     flex-direction: row;
@@ -848,18 +852,29 @@ html {
 .caracteristicas-item{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 0.8rem;
     max-width: 25rem;
     padding: 2rem 2rem;
     margin-bottom: 1rem;
     border-radius: 10px;
     background-color: white;
+    justify-content: flex-start; /* Centrar los elementos verticalmente */
+    align-items: center;
+}
+
+.caracteristicas-item p{
+    text-align: center;
+}
+.caracteristicas__img{
+    width: 50px;
+    height: 50px;
+    margin: 25px auto;
 }
 .capturas{
     scroll-margin-top: 7rem;
     width: 100%;
-    margin: 3rem 0;
+    margin: 0 0;
     padding: 2rem 4rem;
     display: flex;
     flex-direction: column;
@@ -867,6 +882,16 @@ html {
     gap: 1.2rem;
     background-color: #ebebeb;
     overflow-x: hidden; /* Oculta el desbordamiento horizontal */    
+}
+.capturas__title{
+    font-size: 4.8rem;
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    letter-spacing: 0.15rem;
 }
 .capturas__content{
     display: flex;
@@ -892,4 +917,11 @@ html {
     margin-bottom: 1rem;
     border-radius: 10px;
     background-color: white;
+}
+
+.line-left-red {
+    display: inline-block;
+    width: 5px;
+    height: 22px;
+    background-color: #D50000;
 }

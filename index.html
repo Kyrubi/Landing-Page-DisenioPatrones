@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safe U Landing Page</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Gothic&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
 </head>
 <!-- TABLA DE CONTENIDOS 
     1. MENU BAR
@@ -21,17 +25,17 @@
     <header class="header" id="home">
         <nav class="navbar">
         <a class="navbar__logo" href="#home">
-            <img src="./asset/img/logo-safeu.jpg" alt="logo">
+            <img src="./asset/img/SAFEU.png" alt="logo">
             <p>SafeU</p>
         </a>
         <div class="navbar__complete-list">
             <ul class="navbar__list">
-                <li class="navbar__link"><a href="#conoce-mas">CONOCE MAS</a></li>
-                <li class="navbar__link"><a href="#caracteristicas">CARACTERISTICAS</a></li>
+                <li class="navbar__link"><a href="#conoce-mas">CONÓCENOS</a></li>
+                <li class="navbar__link"><a href="#caracteristicas">CARACTERÍSTICAS</a></li>
                 <li class="navbar__link"><a href="#equipo">EQUIPO</a></li>
                 <li class="navbar__link"><a href="#capturas">CAPTURAS</a></li>
             </ul>
-            <button class="navbar__button"><a href="#contactanos">CONTACTANOS</a></button>
+            <button class="navbar__button"><a href="#contactanos">CONTÁCTANOS</a></button>
         </div>
         </nav>
         <figure class="banner">
@@ -39,8 +43,8 @@
                 <!-- <img src="./asset/img/fondo-header.jpg" alt="UPC"> -->
             </picture>
             <figcaption class="banner__content">
-                <h1 class="banner__title">Sientete protegido con la nueva funcionalidad de MiUPC </h1>
-                <button class="banner__button">COMENZAR</button>
+                <h1 class="banner__title">Siéntete protegido con la nueva funcionalidad de MiUPC </h1>
+                <button class="banner__button" href = "#conoce-mas">COMENZAR</button>
             </figcaption>
         </figure>
     </header>
@@ -48,43 +52,43 @@
     <!-- CONOCE MAS -->
     <section class="conoce-mas" id="conoce-mas" >
         <div class="conoce-mas__heading">
-            <h2>Sobre Nosotros</h2>
+            <h2 class="conoce-mas__title"><span class="line-left-red"></span> Sobre Nosotros</h2>
             <p>Somos SafeU, un equipo comprometido con la seguridad y el bienestar de los estudiantes universitarios en el Perú. Ante la creciente necesidad de soluciones efectivas para mejorar la seguridad en los campus, hemos desarrollado una herramienta innovadora que brinda tranquilidad y protección en el entorno universitario.
             </p>
         </div>
-        <img class="conoce-mas__image" src="">
+        <img class="conoce-mas__img" src="./asset/img/Conocenos.jpg">
     </section>
     <!-- /CONOCE MAS -->
     <!-- EQUIPO -->
     <section class="equipo" id="equipo">
         <div class="equipo__heading">
-            <h2>Conoce a Nuestro Equipo</h2>
+            <h2 class="equipo__title"><span class="line-left-red"></span> Conoce a Nuestro Equipo</h2>
             <p>En SafeU, contamos con un equipo multidisciplinario y comprometido, dedicado a mejorar la seguridad y la respuesta a emergencias en el campus universitario. Nuestro equipo está compuesto por:</p>
         </div>
         <div class="equipo__content">
             <article class="equipo__card">
-                <h3 class="equipo__person-title">Daniel Crispin</h3>
+                <h4 class="equipo__person-title">Daniel Crispin</h4>
                 <p class="equipo__person-description">Team Leader</p>
                 <img class="equipo__person-photo" src="./asset/img/equipo-integrante-daniel.jpg" alt="">
             </article>
             <article class="equipo__card">
-                <h3 class="equipo__person-title">Kalet Esteban</h3>
-                <p class="equipo__person-description">Desarrollador de Objetivos y Diagramas</p>
+                <h4 class="equipo__person-title">Kalet Esteban</h4>
+                <p class="equipo__person-description">Desarrollador</p>
                 <img class="equipo__person-photo" src="./asset/img/equipo-integrante-kalet.jpg" alt="">
             </article>
             <article class="equipo__card">
-                <h3 class="equipo__person-title">Paul Sulca</h3>
-                <p class="equipo__person-description">Desarrollador de Historias de Usuario y Programador</p>
+                <h4 class="equipo__person-title">Paul Sulca</h4>
+                <p class="equipo__person-description">Desarrollador</p>
                 <img class="equipo__person-photo"src="./asset/img/equipo-integrante-paul.jpg" alt="">
             </article>
             <article class="equipo__card">
-                <h3 class="equipo__person-title">Carlos Fernandez</h3>
+                <h4 class="equipo__person-title">Carlos Fernandez</h4>
                 <p class="equipo__person-description">Especialista en Requisitos</p>
                 <img class="equipo__person-photo" src="./asset/img/equipo-integrante-fredy.jpg" alt="">
             </article>
             <article class="equipo__card">
-                <h3 class="equipo__person-title">Adrian Donayre</h3>
-                <p class="equipo__person-description">Analista de Requisitos y Diagramas</p>
+                <h4 class="equipo__person-title">Adrian Donayre</h4>
+                <p class="equipo__person-description">Analista</p>
                 <img class="equipo__person-photo" src="./asset/img/equipo-integrante-adrian.jpg" alt="">
             </article>
         </div>
@@ -93,35 +97,35 @@
     <!-- CARACTERISTICAS -->
     <section class="caracteristicas" id="caracteristicas">
         <div class="caracteristicas__heading">
-            <h2>Características de la Funcionalidad de SafeU</h2>
+            <h2 class="caracteristicas__title"><span class="line-left-red"></span> Características de la Funcionalidad de SafeU</h2>
             <p>SafeU es una innovadora herramienta diseñada para mejorar la seguridad y la respuesta a emergencias en el campus universitario. Las principales características de la funcionalidad incluyen</p>
         </div>
         <div class="caracteristicas-row">
             <div class="caracteristicas-item">
-                    <h3>Notificaciones de Emergencia</h3>
+                    <img class="caracteristicas__img" src="./asset/icon/notificacion-de-campana-en-redes-sociales.svg" alt="">
+                    <h4 class="caracteristicas-item__title">Notificaciones de Emergencia</h4>
                     <p> El sistema puede enviar alertas en múltiples formatos y notificar a contactos de emergencia vía SMS</p>
-                    <img src="" alt="">
             </div>
             <div class="caracteristicas-item">
-                    <img src="" alt="">
-                    <h3>Información de Citas Médicas</h3>
+                    <img class="caracteristicas__img" src="./asset/icon/archivos-medicos.svg" alt="">
+                    <h4 class="caracteristicas-item__title">Información de Citas Médicas</h4>
                     <p>Facilita la gestión y reserva de citas médicas para los usuarios</p>
-                    <img src="" alt="">
             </div>
             <div class="caracteristicas-item">
-                    <h3>Prevención de Accidentes</h3>
+                    <img class="caracteristicas__img" src="./asset/icon/escudo-de-usuario.svg" alt="">
+                    <h4 class="caracteristicas-item__title">Prevención de Accidentes</h4>
                     <p>Proporciona información y recursos para evitar accidentes en el campus</p>
-                    <img src="" alt="">
             </div>
             <div class="caracteristicas-item">
-                    <h3>Protocolo de Emergencia</h3>
+                <img class="caracteristicas__img" src="./asset/icon/luz-emergencia-encendida.svg" alt="">
+                    <h4 class="caracteristicas-item__title">Protocolo de Emergencia</h4>
                     <p>Activa ayuda inmediata y envía la ubicación exacta en situaciones de emergencia</p>
                     <img src="" alt="">
             </div>
             <div class="caracteristicas-item">
-                    <h3>Videollamadas con Personal Médico</h3>
+                    <img class="caracteristicas__img" src="./asset/icon/camara-web.svg" alt="">
+                    <h4 class="caracteristicas-item__title">Videollamadas con Personal Médico</h4>
                     <p>Permite a los usuarios conectarse rápidamente con profesionales de la salud en situaciones de emergencia</p>
-                    <img src="" alt="">
             </div>
         </div>
     </section>
@@ -129,7 +133,7 @@
     <!-- CAPTURAS -->
     <section class="capturas" id="capturas">
         <div class="capturas__heading">
-            <h2>Capturas</h2>
+            <h2 class="capturas__title"><span class="line-left-red"></span> Capturas</h2>
             <p>Explora la interfaz intuitiva y las funcionalidades clave de SafeU a través de nuestras capturas de pantalla</p>
         </div>
         <div class="capturas__content">
@@ -164,9 +168,9 @@
         <div class="contactanos__header">
             <div class="contactanos__complete-title">
                 <img class="contactanos__icon" src="./asset/icon/contact.svg" alt="">
-                <h2 class="contactanos__title">CONTÁCTANOS</h2>
+                <h2 class="contactanos__title"><span class="line-left-red"></span> Contáctanos</h2>
             </div>
-            <h3 class="contactanos__subtitle">Obtenga ahora mismo un asesoramiento gratuito de nuestro experto.</h3>
+            <h4 class="contactanos__subtitle">Obtenga ahora mismo un asesoramiento gratuito de nuestro experto.</h4>
             <p class="contactanos__description">Con un montón de bloques únicos, usted puede construir fácilmente una página sin codificación. Construye tu próxima página de aterrizaje tan rápidamente con Albino.</p>
         </div>
         <form class="contactanos__form" action="">
@@ -193,29 +197,19 @@
     <!-- FOOTER -->
     <footer class="footer">
         <section class="footer__content">
-            <div class="sign-up">
-                <h3 class="sign-up__title">SIGN UP</h3>
-                <button class="sign-up__button">Create account</button>
-                <div class="sign-up__social">
-                    <img src="./asset/icon/i-facebook.svg" alt="">
-                    <img src="./asset/icon/i-twitter.svg" alt="">
-                    <img src="./asset/icon/i-instagram.svg" alt="">
-                </div>
-            </div>
             <div class="usefull-links">
-                <h3 class="usefull-links__title">USEFULL LINKS</h3>
+                <h4 class="usefull-links__title">USEFULL LINKS</h4>
                 <ul class="usefull-links__list">
                     <li class="usefull-links__item"><a href="#home">Home</a></li>
                     <li class="usefull-links__item"><a href="#conoce-mas">Conoce mas</a></li>
-                    <li class="usefull-links__item"><a href="#beneficios">Beneficios</a></li>
-                    <li class="usefull-links__item"><a href="#testimonios">Testimonios</a></li>
-                    <li class="usefull-links__item"><a href="#sobre-nosotros">Nosotros</a></li>
-                    <li class="usefull-links__item"><a href="#contactar">Contactar</a></li>
-                    <li class="usefull-links__item"><a href="#FAQ">FAQ</a></li>
+                    <li class="usefull-links__item"><a href="#equipo">Equipo</a></li>
+                    <li class="usefull-links__item"><a href="#caracteristicas">Características</a></li>
+                    <li class="usefull-links__item"><a href="#contactar">Capturas</a></li>
+                    <li class="usefull-links__item"><a href="#Contactanos">Contactanos</a></li>
                 </ul>
             </div>
             <div class="contact">
-                <h3 class="contact__title">CONTACT</h3>
+                <h4 class="contact__title">CONTACT</h4>
                 <div class="contact__info">
                     <div class="contact__item">
                         <img src="./asset/icon/i-phone.svg" alt="">
@@ -228,7 +222,7 @@
                 </div>
             </div>
             <div class="legal">
-                <h3 class="legal__title">LEGAL</h3>
+                <h4 class="legal__title">LEGAL</h4>
                 <div class="legal__links">
                     <div class="legal__link">
                         <img src="./asset/icon/double-arrow.svg" alt="">
