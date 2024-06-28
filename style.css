@@ -912,7 +912,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     gap: 0.8rem;
-    max-width: 30rem;
+    max-width: 25rem;
     padding: 2rem 2rem;
     margin-bottom: 1rem;
     border-radius: 10px;
